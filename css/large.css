@@ -1,34 +1,115 @@
-/* #sticky-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #026670;
-  padding: 0.5em 3em;
+@media (min-width: 768px) {
+  /* and (max-width: 1440px) */
+  body::before {
+    content: "large";
+    position: fixed;
+    z-index: 100;
+    padding: 0.5em;
+    background-color: white;
+    margin: 0.5em;
+    opacity: 0.5;
+    border-radius: 0.5em;
+    bottom: 0;
+  }
+
+  #sticky-header {
+    padding: 0.5em 3em;
+  }
+
+  #sticky-header #logo {
+    width: 4em;
+    height: 4em;
+  }
+
+  #sticky-header #menu-nav {
+    display: none;
+  }
+
+  #sticky-header #list-nav {
+    display: block;
+  }
+
+  #sticky-header #list-nav .main-nav-options {
+    display: block;
+    font-size: 1em;
+    padding-top: 0;
+  }
+
+  #sticky-header #list-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  #sticky-header #list-nav ul li a#contact-me {
+    background: white;
+    color: #026670;
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+  }
+
+  #sticky-header #list-nav ul.case-study-options {
+    background: red;
+    list-style-type: none;
+    padding-left: 0;
+    background-color: white;
+    position: absolute;
+    /* visibility: hidden;
+    height: 0; */
+  }
+
+  #sticky-header #list-nav ul.case-study-options li {
+    display: block;
+    color: white;
+    background: red;
+  }
+
+  main#home {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    padding-left: 3em;
+    max-width: 35em;
+    height: calc(100vh - 9em);
+  }
+
+  main#home h1 {
+    font-size: 3em;
+  }
+
+  main#home p {
+    font-size: 1.5em;
+    justify-self: left;
+  }
+
+  main#home #case-studies{
+    justify-self: right;
+    align-self: start;
+  }
+
+  #fixed-footer {
+    background: black;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #fixed-footer a {
+    display: inline-block;
+    margin-left: 1.5em;
+  }
+
+  #fixed-footer a:first-child {
+    margin-left: 0;
+  }
+
+  #fixed-footer .icon {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    background-color: white;
+    display: inline-block;
+  }
 }
-
-#sticky-header #logo {
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  background: white;
-}
-
-#sticky-header #list-nav {
-
-}
-
-#sticky-header #list-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-#sticky-header #list-nav ul li a#contact-me {
-  background: white;
-  color: black;
-  padding: 0.75em 1.25em;
-  border-radius: 0.5em;
-}
-
- */
