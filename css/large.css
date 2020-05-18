@@ -55,6 +55,7 @@
     position: absolute;
     /* visibility: hidden;
     height: 0; */
+    display: none;
   }
 
   #sticky-header #list-nav ul.case-study-options li {
