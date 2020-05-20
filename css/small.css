@@ -23,6 +23,7 @@
     align-items: center;
     background-color: #026670;
     padding: 0.5em 0.5em 0.5em 1em;
+    z-index: 100;
   }
 
   #sticky-header #logo {
@@ -45,11 +46,11 @@
   }
 
   #sticky-header #menu-nav #open-menu-icon {
-    display: none;
+    /* display: none; */
   }
 
   #sticky-header #menu-nav #close-menu-icon {
-    /* display: none; */
+    display: none;
   }
 
   #sticky-header ul.main-nav-options {
@@ -62,7 +63,7 @@
     position: absolute;
     right: 0;
     background-color: #026670;
-    /* display: none; */
+    display: none;
     /* background-color: rgba(2, 102, 112, 0.75); */
   }
 

@@ -48,11 +48,12 @@
   }
 
   #sticky-header #list-nav ul.case-study-options {
-    background: red;
+    background: #026670;
     list-style-type: none;
     padding-left: 0;
-    background-color: white;
     position: absolute;
+    margin-left: -1.5em;
+    margin-top: 1em;
     /* visibility: hidden;
     height: 0; */
     display: none;
@@ -61,7 +62,8 @@
   #sticky-header #list-nav ul.case-study-options li {
     display: block;
     color: white;
-    background: red;
+    margin-left: 0;
+    padding: 0.5em 1em;
   }
 
   main#home {

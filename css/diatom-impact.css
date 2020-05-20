@@ -1,0 +1,223 @@
+@media (max-width: 1440px) {
+
+  /* default */
+  main#diatom-impact {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 30em;
+    margin: auto;
+    align-items: center;
+  }
+
+  main#diatom-impact #diatom-logo {
+    width: 75%;
+  }
+
+  main#diatom-impact #container-demo-design-video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+  }
+
+  main#diatom-impact #container-demo-design-video #video-demo-design {
+    width: 77%;
+    position: absolute;
+    top: 7%;
+    /* z-index: -1; */
+  }
+
+  main#diatom-impact #container-demo-design-video #macbook-container-demo-design {
+    width: 100%;
+    pointer-events: none;
+    z-index: 10
+  }
+
+  main#diatom-impact .intro {
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  main#diatom-impact h1,
+  main#diatom-impact h2 {
+    text-align: center;
+  }
+
+  main#diatom-impact h1,
+  main#diatom-impact h2,
+  main#diatom-impact h3,
+  main#diatom-impact p {
+    width: 100%;
+  }
+
+  main#diatom-impact #design-process-timeline li {
+    align-self: center;
+    display: flex;
+    align-items: center;
+  }
+
+  main#diatom-impact #design-process-timeline li:nth-child(2n+1):before {
+    counter-increment: listCounter;
+    content: counter(listCounter) " "; /*Instead of ". " */
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5rem;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-flex;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+  }
+
+  main#diatom-impact #design-process-timeline li:nth-child(2n):after {
+    counter-increment: listCounter;
+    content: counter(listCounter) " "; /*Instead of ". " */
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5rem;
+    height: 1em;
+    width: 1em;
+    min-width: 1em;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-flex;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5em;
+  }
+
+  main#diatom-impact #design-process-timeline li:nth-child(2n+1) {
+    justify-self: left;
+    /* padding-left: 0.5em; */
+  }
+
+  main#diatom-impact #design-process-timeline li:nth-child(2n) {
+    justify-self: right;
+    text-align: right;
+    /* padding-right: 0.5em; */
+  }
+
+  main#diatom-impact #design-process-timeline {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 30px 5px 30px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "step-1 step-1-line image . ." ". . image step-2-line step-2 " "step-3 step-3-line image . ." ". . image step-4-line step-4 " "step-5 step-5-line image . ." ". . image step-6-line step-6 " "step-7 step-7-line image . ." ". . image step-8-line step-8 " "step-9 step-9-line image . ." ". . image step-10-line step-10 " "step-11 step-11-line image . .";
+    counter-reset: listCounter;
+  }
+
+  .step-1 { grid-area: step-1; }
+  .step-2 { grid-area: step-2; }
+  .step-3 { grid-area: step-3; }
+  .step-4 { grid-area: step-4; }
+  .step-5 { grid-area: step-5; }
+  .step-6 { grid-area: step-6; }
+  .step-7 { grid-area: step-7; }
+  .step-8 { grid-area: step-8; }
+  .step-9 { grid-area: step-9; }
+  .step-10 { grid-area: step-10; }
+  .step-11 { grid-area: step-11; }
+  .step-line {
+    display: flex;
+    align-items: center;
+    transform: translateX(5px);
+  }
+  .step-line:nth-child(2n):after {
+    display: flex;
+    align-items: center;
+    transform: translateX(-7.5px);
+  }
+  .step-line:after {
+    content: "";
+    background: black;
+    height: 10px;
+    width: 30px;
+    border-radius: 10px;
+  }
+  .step-1-line { grid-area: step-1-line; }
+  .step-2-line { grid-area: step-2-line; }
+  .step-3-line { grid-area: step-3-line; }
+  .step-4-line { grid-area: step-4-line; }
+  .step-5-line { grid-area: step-5-line; }
+  .step-6-line { grid-area: step-6-line; }
+  .step-7-line { grid-area: step-7-line; }
+  .step-8-line { grid-area: step-8-line; }
+  .step-9-line { grid-area: step-9-line; }
+  .step-10-line { grid-area: step-10-line; }
+  .step-11-line { grid-area: step-11-line; }
+  .image {
+    grid-area: image;
+    height: 100%;
+    width: 0;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-left: -2.5px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex-container img {
+    width: 100%;
+  }
+
+  .grid-2-x-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5em 0.5em;
+    grid-template-areas: ". ." ". ." ". ." ". .";
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-2-x-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5em 0.5em;
+    grid-template-areas: ". ." ". ." ". .";
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-2-x-4 > img,
+  .grid-2-x-6 > img {
+    width: 100%
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  /* medium */
+  .flex-container {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .flex-container > * {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* large */
+}
