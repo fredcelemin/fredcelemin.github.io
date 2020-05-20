@@ -1,0 +1,59 @@
+.width-75 { width: 75%; }
+.block { display: block; }
+.margin-auto { margin: auto; }
+
+.macbook-with-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.macbook-with-video video {
+  position: absolute;
+  width: 77%;
+  top: 7%;
+}
+
+.macbook-with-video img {
+  z-index: 10;
+  width: 100%;
+  pointer-events: none;
+}
+
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+.no-list-style { list-style: none; }
+
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.grid-vcenter { align-items: center; }
+.grid-hcenter { justify-content: center; }
+
+.grid-2x1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". .";
+}
+
+.grid-2x4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". ." ". ." ". ." ". .";
+}
+
+.grid-2x6 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas: ". ." ". ." ". .";
+}
+
+.grid-uls {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas: ". ." ". ." ". .";
+}

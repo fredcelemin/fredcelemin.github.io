@@ -1,65 +1,55 @@
 @media (max-width: 1440px) {
-
   /* default */
-  main#diatom-impact {
-    display: flex;
-    padding: 1em;
-    justify-content: center;
-    flex-direction: column;
+
+  main {
     max-width: 30em;
     margin: auto;
-    align-items: center;
+    padding: 1em;
   }
 
-  main#diatom-impact #diatom-logo {
-    width: 75%;
-  }
-
-  main#diatom-impact #container-demo-design-video {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-  }
-
-  main#diatom-impact #container-demo-design-video #video-demo-design {
-    width: 77%;
-    position: absolute;
-    top: 7%;
-    /* z-index: -1; */
-  }
-
-  main#diatom-impact #container-demo-design-video #macbook-container-demo-design {
-    width: 100%;
-    pointer-events: none;
-    z-index: 10
-  }
-
-  main#diatom-impact .intro {
-    font-size: 1.25em;
-    text-align: center;
-  }
-
-  main#diatom-impact h1,
-  main#diatom-impact h2 {
-    text-align: center;
-  }
-
-  main#diatom-impact h1,
-  main#diatom-impact h2,
-  main#diatom-impact h3,
-  main#diatom-impact p {
+  main img {
     width: 100%;
   }
 
-  main#diatom-impact #design-process-timeline li {
+  main h1,
+  main h2 {
+    text-align: center;
+  }
+
+  main #kickoff-section .grid {
+    grid-template-columns: 10em 1fr;
+  }
+
+  main #kickoff-section .grid img {
+    width: 50%;
+  }
+
+  main #kickoff-section .grid div {
+    text-align: center;
+  }
+
+  /* timeline styles */
+  main #design-process-timeline {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 30px 5px 30px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "step-1 step-1-line line . ." ". . line step-2-line step-2 " "step-3 step-3-line line . ." ". . line step-4-line step-4 " "step-5 step-5-line line . ." ". . line step-6-line step-6 " "step-7 step-7-line line . ." ". . line step-8-line step-8 " "step-9 step-9-line line . ." ". . line step-10-line step-10 " "step-11 step-11-line line . .";
+    counter-reset: listCounter;
+  }
+
+  main #design-process-timeline li {
     align-self: center;
     display: flex;
     align-items: center;
   }
 
-  main#diatom-impact #design-process-timeline li:nth-child(2n+1):before {
+  main #design-process-timeline li:nth-child(2n+1):before {
     counter-increment: listCounter;
     content: counter(listCounter) " "; /*Instead of ". " */
     text-align: center;
@@ -77,9 +67,9 @@
     margin-right: 0.5em;
   }
 
-  main#diatom-impact #design-process-timeline li:nth-child(2n):after {
+  main #design-process-timeline li:nth-child(2n):after {
     counter-increment: listCounter;
-    content: counter(listCounter) " "; /*Instead of ". " */
+    content: counter(listCounter) " ";
     text-align: center;
     border: 1px solid black;
     padding: 0.5rem;
@@ -95,29 +85,13 @@
     margin-left: 0.5em;
   }
 
-  main#diatom-impact #design-process-timeline li:nth-child(2n+1) {
+  main #design-process-timeline li:nth-child(2n+1) {
     justify-self: left;
-    /* padding-left: 0.5em; */
   }
 
-  main#diatom-impact #design-process-timeline li:nth-child(2n) {
+  main #design-process-timeline li:nth-child(2n) {
     justify-self: right;
     text-align: right;
-    /* padding-right: 0.5em; */
-  }
-
-  main#diatom-impact #design-process-timeline {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style-position: inside;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 30px 5px 30px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "step-1 step-1-line image . ." ". . image step-2-line step-2 " "step-3 step-3-line image . ." ". . image step-4-line step-4 " "step-5 step-5-line image . ." ". . image step-6-line step-6 " "step-7 step-7-line image . ." ". . image step-8-line step-8 " "step-9 step-9-line image . ." ". . image step-10-line step-10 " "step-11 step-11-line image . .";
-    counter-reset: listCounter;
   }
 
   .step-1 { grid-area: step-1; }
@@ -159,63 +133,18 @@
   .step-9-line { grid-area: step-9-line; }
   .step-10-line { grid-area: step-10-line; }
   .step-11-line { grid-area: step-11-line; }
-  .image {
-    grid-area: image;
+  .line {
+    grid-area: line;
     height: 100%;
     width: 0;
     border: 5px solid black;
     border-radius: 5px;
     margin-left: -2.5px;
   }
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .flex-container img {
-    width: 100%;
-  }
-
-  .grid-2-x-6 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0.5em 0.5em;
-    grid-template-areas: ". ." ". ." ". ." ". .";
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-2-x-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0.5em 0.5em;
-    grid-template-areas: ". ." ". ." ". .";
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-2-x-4 > img,
-  .grid-2-x-6 > img {
-    width: 100%
-  }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
   /* medium */
-  .flex-container {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .flex-container > * {
-    width: auto;
-  }
 }
 
 @media (min-width: 768px) {
