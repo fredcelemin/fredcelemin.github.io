@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="../css/medium.css">
   <link rel="stylesheet" href="../css/large.css">
   <link rel="stylesheet" href="../css/x-large.css">
-  <link rel="stylesheet" href="../css/diatom-impact.css">
   <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/diatom-impact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
   <!-- TODO <link rel="shortcut icon" href=".ico"> -->
 </head>
 
@@ -55,8 +57,8 @@
   <main id="diatom-impact">
 
     <section id="hero-section">
-      <img class="block width-75 margin-auto" src="../assets/diatom-logo.svg" alt="">
-      <div class="block width-75 margin-auto macbook-with-video">
+      <img src="../assets/diatom-logo.svg" alt="">
+      <div class="macbook-with-video">
         <video src="../assets/demo-design.mp4" autoplay muted></video>
         <img src="../assets/macbook-container.svg" alt="">
       </div>
@@ -64,7 +66,7 @@
 
     <!-- TODO: This section is an open question -->
     <section id="project-brief-section">
-      <h2>Project Brief</h2>
+      <h2 class="unnumbered">Project Brief</h2>
       <h3>The Company</h3>
       <p>Diatom Impact is a new venture started by Platform Capital Investment Partners, a venture capital firm based in Lagos, Nigeria. It is a non-profit organization with the mission of working at an ecosystem level to improve the
         everyday lives of Nigerian citizens.</p>
@@ -85,20 +87,20 @@
     </section>
 
     <section id="design-process-section">
-      <h2>Design process</h2>
+      <h2 class="unnumbered">Design process</h2>
       <ol id="design-process-timeline">
         <div class="line"></div>
         <li class="step-1">Kick off meeting with client</li>
         <li class="step-2">Research</li>
         <li class="step-3">Moodboards</li>
         <li class="step-4">Style tiles</li>
-        <li class="step-5">Interviews Round 1</li>
-        <li class="step-6">Analyzing wireframes</li>
-        <li class="step-7">High fidelity and prototype Round 1</li>
-        <li class="step-8">Interviews round 2</li>
-        <li class="step-9">High fidelity and prototype Round 2</li>
+        <li class="step-5">Analyzing wireframes</li>
+        <li class="step-6">High fidelity and prototype Round 1</li>
+        <li class="step-7">High fidelity and prototype Round 2</li>
+        <li class="step-8">Final design</li>
+        <!-- <li class="step-9"></li>
         <li class="step-10">Interviews Round 3</li>
-        <li class="step-11">Final design</li>
+        <li class="step-11"></li> -->
         <div class="step-line step-1-line"></div>
         <div class="step-line step-2-line"></div>
         <div class="step-line step-3-line"></div>
@@ -107,18 +109,18 @@
         <div class="step-line step-6-line"></div>
         <div class="step-line step-7-line"></div>
         <div class="step-line step-8-line"></div>
-        <div class="step-line step-9-line"></div>
+        <!-- <div class="step-line step-9-line"></div>
         <div class="step-line step-10-line"></div>
-        <div class="step-line step-11-line"></div>
+        <div class="step-line step-11-line"></div> -->
       </ol>
     </section>
 
     <section id="kickoff-section">
       <h2>Kickoff meeting with the client and proto persona</h2>
-
-      <img src="../assets/anna-bethune.png" alt="">
-
-      <p><strong>Anna Bethune</strong> - Director of Impact and Research</p>
+      <figure>
+          <img src="../assets/anna-bethune.png" alt="">
+          <figcaption><p><strong>Anna Bethune</strong> - Director of Impact and Research</p></figcaption>
+      </figure>
 
       <img src="../assets/proto-persona.png" alt="">
 
@@ -132,7 +134,7 @@
 
       <p>As a team, We discuss different web design principles that will make the website aesthetically pleasing, easy to use, engaging, and effective.</p>
 
-      <div class="grid grid-2x4 grid-hcenter grid-vcenter">
+      <div class="grid grid-2x4 grid-hcenter">
         <div class="">
           <h4>Cultural awareness </h4><img src="../assets/africa-outline.png" alt="">
         </div>
@@ -178,32 +180,38 @@
       <h3>Moodboard 1</h3>
       <p>The first direction I decided to go was with a focus on human connection, and the mood conveyed through the moodboard was appropriate for the target audience because it represents education, opportunities inclusion, protection, gender
         equality. The adjectives for the moodboard represent:</p>
+      <div class="grid grid-list">
         <h4>Adjectives:</h4>
-        <ul class="no-margin no-padding no-list-style">
+        <ul class="no-padding no-list-style">
           <li>Modern</li>
           <li>Natural</li>
           <li>Collaborative</li>
         </ul>
+      </div>
       <img src="../assets/moodboard-1.png" alt="">
 
       <h3>Moodboard 2</h3>
       <p>This moodboard represents teamwork, collaboration, education, equality and inclusion. The adjectives used for this moodboard were:</p>
-      <h4>Adjectives:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Professional</li>
-        <li>Impactful</li>
-        <li>Reflective</li>
-      </ul>
+      <div class="grid grid-list">
+        <h4>Adjectives:</h4>
+        <ul class="no-margin no-padding no-list-style">
+          <li>Professional</li>
+          <li>Impactful</li>
+          <li>Reflective</li>
+        </ul>
+      </div>
       <img src="../assets/moodboard-2.png" alt="">
 
       <h3>Moodboard 3</h3>
       <p>Represent women in tech, education, health, and freedom of expression.The adjectives used for this moodboard were:</p>
-      <h4>Adjectives:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Inviting</li>
-        <li>Friendly</li>
-        <li>Optimistic</li>
-      </ul>
+      <div class="grid grid-list">
+        <h4>Adjectives:</h4>
+        <ul class="no-margin no-padding no-list-style">
+          <li>Inviting</li>
+          <li>Friendly</li>
+          <li>Optimistic</li>
+        </ul>
+      </div>
       <img src="../assets/moodboard-3.png" alt="">
 
       <h3>Final Direction (next step “Style tiles”)</h3>
@@ -220,50 +228,71 @@
 
       <h3>Style Tile 1</h3>
       <p>The look and feel of this Style Tile are appropriate for the target audience because it represents education, opportunities inclusion, protection, gender equality.</p>
-      <h4>Emotions:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Hope</li>
-        <li>Kindness</li>
-        <li>Optimism</li>
-      </ul>
-      <h4>Adjectives:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Modern</li>
-        <li>Natural</li>
-        <li>Collaborative</li>
-      </ul>
+      <div class="grid grid-2x1">
+        <div class="grid grid-list">
+          <h4>Emotions:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Hope</li>
+            <li>Kindness</li>
+            <li>Optimism</li>
+          </ul>
+        </div>
+        <div class="grid grid-list">
+          <h4>Adjectives:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Modern</li>
+            <li>Natural</li>
+            <li>Collaborative</li>
+          </ul>
+        </div>
+      </div>
+
       <img src="../assets/style-tile-1.png" alt="">
 
       <h3>Style Tile 2</h3>
       <p>This Style Tile represents freedom of expression, and equality and inclusion and I decided to add the logo as an element to deliver professionalism:</p>
-      <h4>Emotions:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Enthusiasm</li>
-        <li>Enjoyment</li>
-        <li>Admiration</li>
-      </ul>
-      <h4>Adjectives:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Professional</li>
-        <li>Impactful</li>
-        <li>Reflective</li>
-      </ul>
+      <div class="grid grid-2x1">
+        <div class="grid grid-list">
+          <h4>Emotions:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Enthusiasm</li>
+            <li>Enjoyment</li>
+            <li>Admiration</li>
+          </ul>
+        </div>
+        <div class="grid grid-list">
+          <h4>Adjectives:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Professional</li>
+            <li>Impactful</li>
+            <li>Reflective</li>
+          </ul>
+        </div>
+      </div>
+
       <img src="../assets/style-tile-2.png" alt="">
 
       <h3>Style Tile 3</h3>
       <p>Represent women in tech, education. I decided to include the value propositions to make the concept feel more personal.</p>
-      <h4>Emotions:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Inspiration</li>
-        <li>Confidence</li>
-        <li>Happiness</li>
-      </ul>
-      <h4>Adjectives:</h4>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Inviting</li>
-        <li>Friendly</li>
-        <li>Optimistic</li>
-      </ul>
+      <div class="grid grid-2x1">
+        <div class="grid grid-list">
+          <h4>Emotions:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Inspiration</li>
+            <li>Confidence</li>
+            <li>Happiness</li>
+          </ul>
+        </div>
+        <div class="grid grid-list">
+          <h4>Adjectives:</h4>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Inviting</li>
+            <li>Friendly</li>
+            <li>Optimistic</li>
+          </ul>
+        </div>
+      </div>
+
       <img src="../assets/style-tile-3.png" alt="">
 
       <h3>Final Direction</h3>
@@ -305,14 +334,24 @@
 
       <p>Our client provided us the wireframes used for the actual website, Based on this we had the start point to design our first round of design concepts.</p>
 
-      <img src="../assets/education-wireframe.png" alt="">
-      <img src="../assets/beliefs-wireframe.png" alt="">
-      <img src="../assets/team-wireframe.png" alt="">
-      <img src="../assets/micro-entrepreneurship-wireframe.png" alt="">
-      <img src="../assets/home-page-wireframe.png" alt="">
-      <img src="../assets/untitled-wireframe.png" alt="">
-      <img src="../assets/health-wireframe.png" alt="">
-      <img src="../assets/gender-equity-wireframe.png" alt="">
+      <div id="analyzing-wireframes-grid-test" class="grid">
+        <div class="grid col-1">
+          <img class="education" src="../assets/education-wireframe.png" alt="">
+          <img class="micro-ent" src="../assets/beliefs-wireframe.png" alt="">
+        </div>
+        <div class="grid col-2">
+          <img class="beliefs" src="../assets/team-wireframe.png" alt="">
+          <img class="home" src="../assets/micro-entrepreneurship-wireframe.png" alt="">
+        </div>
+        <div class="grid col-3">
+          <img class="team" src="../assets/home-page-wireframe.png" alt="">
+          <img class="untitled" src="../assets/untitled-wireframe.png" alt="">
+          <div class="grid health-gender-grid">
+            <img class="health" src="../assets/health-wireframe.png" alt="">
+            <img class="gender" src="../assets/gender-equity-wireframe.png" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="round-1-section">
@@ -342,20 +381,25 @@
       <h4>INSIGHTS</h4>
       <p>With a total of 6 interviews I got positive feedback and opportunities to make interactions on my design.</p>
 
-      <h5>Top positives:</h5>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Photography (treatment and use)</li>
-        <li>Icons (intuitive and clear)</li>
-        <li>CTA’s (clear to now where to go)</li>
-      </ul>
-
-      <h5>Top opportunities</h5>
-      <ul class="no-margin no-padding no-list-style">
-        <li>Heavy</li>
-        <li>Many styles</li>
-        <li>Information hiding behind the microinteractions</li>
-        <li>Improve the hierarchy</li>
-      </ul>
+      <div class="grid grid-2x1">
+        <div class="">
+          <h5>Top positives:</h5>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Photography (treatment and use)</li>
+            <li>Icons (intuitive and clear)</li>
+            <li>CTA’s (clear to now where to go)</li>
+          </ul>
+        </div>
+        <div class="">
+          <h5>Top opportunities</h5>
+          <ul class="no-margin no-padding no-list-style">
+            <li>Heavy</li>
+            <li>Many styles</li>
+            <li>Information hiding behind the microinteractions</li>
+            <li>Improve the hierarchy</li>
+          </ul>
+        </div>
+      </div>
 
       <img src="../assets/interview-round-2-feedback.png" alt="">
     </section>
@@ -388,7 +432,7 @@
       <p>I got positive feedback and opportunities to make interactions with my design.</p>
 
       <h5>Top positives:</h5>
-      <ul class="no-margin no-padding no-list-style">
+      <ul>
         <li>Photography: Treatment and use</li>
         <li>Iconography informative</li>
         <li>Clear Calls To Action</li>
@@ -428,7 +472,7 @@
     </section>
 
     <section id="conclusion-section">
-      <h2>Conclusion</h2>
+      <h2 class="unnumbered">Conclusion</h2>
 
       <p>This project was very valuable to myself and I enjoyed working with a team of individuals to create a product for a Diatom Impact. Our client Anna was an absolute pleasure to work with and was very helpful every step of the way in providing
         the team with what we required or anything additional that we needed.</p>

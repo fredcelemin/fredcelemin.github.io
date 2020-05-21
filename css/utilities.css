@@ -1,6 +1,4 @@
-.width-75 { width: 75%; }
 .block { display: block; }
-.margin-auto { margin: auto; }
 
 .macbook-with-video {
   position: relative;
@@ -11,19 +9,22 @@
 
 .macbook-with-video video {
   position: absolute;
-  width: 77%;
-  top: 7%;
+  width: 86%;
+  top: 12%;
+  z-index: -2;
+  clip-path: inset(0px 23px);
 }
 
 .macbook-with-video img {
   z-index: 10;
   width: 100%;
   pointer-events: none;
+  z-index: -1;
 }
 
-.no-margin { margin: 0; }
 .no-padding { padding: 0; }
 .no-list-style { list-style: none; }
+.list-position-inside { list-style-position: inside; }
 
 .grid {
   display: grid;
@@ -33,6 +34,23 @@
 
 .grid-vcenter { align-items: center; }
 .grid-hcenter { justify-content: center; }
+
+.grid-list {
+
+}
+
+.grid-list h4,
+.grid-list h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid-list ul {
+  margin-top: 0;
+}
+
+
+
 
 .grid-2x1 {
   grid-template-columns: 1fr 1fr;

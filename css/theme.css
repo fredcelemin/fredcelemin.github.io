@@ -1,7 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Slab:wght@600&display=swap');
+
 body, html {
-  font-family: arial;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.15;
+}
+
+h1, h2 {
+  margin-top: 3em;
+}
+
+h3 {
+  margin-top: 2.5em;
+}
+
+h4, h5, h6 {
+  margin-top: 2em;
+}
+
+p {
+  margin-top: 1.5em;
+}
+
+.grid, img {
+  margin-top: 1em;
 }
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  background: #026670;
+  color: white;
+  padding: 1em;
+  font-size: 1.8em;
+}
+
+h2.unnumbered:before {
+  counter-increment: none;
+  content: none;
+  color: #FFEB3B;
+}
+h2:before {
+  counter-increment: processCounter;
+  content: counter(processCounter) ". ";
+  color: #FFEB3B;
+}
+
+main {
+  counter-reset: processCounter;
 }

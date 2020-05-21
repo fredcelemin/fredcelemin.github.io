@@ -1,13 +1,32 @@
 @media (max-width: 1440px) {
-  /* default */
 
-  main {
-    max-width: 30em;
-    margin: auto;
-    padding: 1em;
+  /* default */
+  section > *:not(h2) {
+    width: calc(100% - 10vw);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  main img {
+  section img {
+    display: block;
+  }
+
+  section > ul {
+    padding: 0;
+    width: calc(100% - 20vw);
+  }
+
+  .grid {
+    width: calc(100% - 10vw);
+    max-width: 500px;
+  }
+
+  .grid img {
+    width: 100%;
+  }
+
+  .grid .grid {
     width: 100%;
   }
 
@@ -16,30 +35,125 @@
     text-align: center;
   }
 
-  main #kickoff-section .grid {
-    grid-template-columns: 10em 1fr;
+  main #hero-section > * {
+    margin-bottom: 3em;
+    margin-top: 3em;
   }
 
-  main #kickoff-section .grid img {
-    width: 50%;
+  main #kickoff-section figure img {
+    width: 100%;
+  }
+
+  main #kickoff-section figure figcaption p {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    text-align: center;
+  }
+
+  main #kickoff-section .grid {
+    grid-template-columns: auto 1fr;
+    align-items: normal;
+    gap: 2em 1em;
   }
 
   main #kickoff-section .grid div {
     text-align: center;
+    width: 30vw;
+  }
+
+  main #kickoff-section .grid img {
+    margin: auto;
+    width: 75%;
+  }
+
+  main #kickoff-section .grid h4,
+  main #kickoff-section .grid p {
+    margin-top: 0;
+  }
+
+  /* analyzing wireframes grid */
+  main #analyzing-wireframes-grid-test {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "col-1 col-2 col-3";
+  }
+
+  main #analyzing-wireframes-grid-test .col-1 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-areas: "education""micro-ent";
+    grid-area: col-1;
+  }
+
+  main #analyzing-wireframes-grid-test .col-2 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-areas: "home""beliefs";
+    grid-area: col-2;
+  }
+
+  main #analyzing-wireframes-grid-test .col-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "team""untitled""health-gender";
+    grid-area: col-3;
+  }
+
+  main #analyzing-wireframes-grid-test .col-3 .health-gender-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "health gender";
+    grid-area: health-gender;
+  }
+
+  main #analyzing-wireframes-grid-test .education {
+    grid-area: education;
+  }
+
+  main #analyzing-wireframes-grid-test .micro-ent {
+    grid-area: micro-ent;
+  }
+
+  main #analyzing-wireframes-grid-test .beliefs {
+    grid-area: beliefs;
+  }
+
+  main #analyzing-wireframes-grid-test .home {
+    grid-area: home;
+  }
+
+  main #analyzing-wireframes-grid-test .team {
+    grid-area: team;
+  }
+
+  main #analyzing-wireframes-grid-test .untitled {
+    grid-area: untitled;
+  }
+
+  main #analyzing-wireframes-grid-test .health {
+    grid-area: health;
+  }
+
+  main #analyzing-wireframes-grid-test .gender {
+    grid-area: gender;
   }
 
   /* timeline styles */
+  main #design-process-section h2 {
+    margin-bottom: 3em;
+  }
+
   main #design-process-timeline {
-    margin: 0;
     padding: 0;
     list-style-type: none;
     list-style-position: inside;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 30px 5px 30px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px 1px;
-    grid-template-areas: "step-1 step-1-line line . ." ". . line step-2-line step-2 " "step-3 step-3-line line . ." ". . line step-4-line step-4 " "step-5 step-5-line line . ." ". . line step-6-line step-6 " "step-7 step-7-line line . ." ". . line step-8-line step-8 " "step-9 step-9-line line . ." ". . line step-10-line step-10 " "step-11 step-11-line line . .";
+    /* grid-template-areas: "step-1 step-1-line line . ."". . line step-2-line step-2 ""step-3 step-3-line line . ."". . line step-4-line step-4 ""step-5 step-5-line line . ."". . line step-6-line step-6 ""step-7 step-7-line line . ."". . line step-8-line step-8 ""step-9 step-9-line line . ."". . line step-10-line step-10 ""step-11 step-11-line line . ."; */
+    grid-template-areas: "step-1 step-1-line line . ."". . line step-2-line step-2 ""step-3 step-3-line line . ."". . line step-4-line step-4 ""step-5 step-5-line line . ."". . line step-6-line step-6 ""step-7 step-7-line line . ."". . line step-8-line step-8 ";
     counter-reset: listCounter;
   }
 
@@ -51,7 +165,8 @@
 
   main #design-process-timeline li:nth-child(2n+1):before {
     counter-increment: listCounter;
-    content: counter(listCounter) " "; /*Instead of ". " */
+    content: counter(listCounter) " ";
+    /*Instead of ". " */
     text-align: center;
     border: 1px solid black;
     padding: 0.5rem;
@@ -94,45 +209,115 @@
     text-align: right;
   }
 
-  .step-1 { grid-area: step-1; }
-  .step-2 { grid-area: step-2; }
-  .step-3 { grid-area: step-3; }
-  .step-4 { grid-area: step-4; }
-  .step-5 { grid-area: step-5; }
-  .step-6 { grid-area: step-6; }
-  .step-7 { grid-area: step-7; }
-  .step-8 { grid-area: step-8; }
-  .step-9 { grid-area: step-9; }
-  .step-10 { grid-area: step-10; }
-  .step-11 { grid-area: step-11; }
+  .step-1 {
+    grid-area: step-1;
+  }
+
+  .step-2 {
+    grid-area: step-2;
+  }
+
+  .step-3 {
+    grid-area: step-3;
+  }
+
+  .step-4 {
+    grid-area: step-4;
+  }
+
+  .step-5 {
+    grid-area: step-5;
+  }
+
+  .step-6 {
+    grid-area: step-6;
+  }
+
+  .step-7 {
+    grid-area: step-7;
+  }
+
+  .step-8 {
+    grid-area: step-8;
+  }
+
+  .step-9 {
+    grid-area: step-9;
+  }
+
+  .step-10 {
+    grid-area: step-10;
+  }
+
+  .step-11 {
+    grid-area: step-11;
+  }
+
   .step-line {
     display: flex;
     align-items: center;
     transform: translateX(5px);
   }
+
   .step-line:nth-child(2n):after {
     display: flex;
     align-items: center;
-    transform: translateX(-7.5px);
+    transform: translateX(0px);
   }
+
   .step-line:after {
     content: "";
     background: black;
     height: 10px;
     width: 30px;
     border-radius: 10px;
+    transform: translateX(-10px);
   }
-  .step-1-line { grid-area: step-1-line; }
-  .step-2-line { grid-area: step-2-line; }
-  .step-3-line { grid-area: step-3-line; }
-  .step-4-line { grid-area: step-4-line; }
-  .step-5-line { grid-area: step-5-line; }
-  .step-6-line { grid-area: step-6-line; }
-  .step-7-line { grid-area: step-7-line; }
-  .step-8-line { grid-area: step-8-line; }
-  .step-9-line { grid-area: step-9-line; }
-  .step-10-line { grid-area: step-10-line; }
-  .step-11-line { grid-area: step-11-line; }
+
+  .step-1-line {
+    grid-area: step-1-line;
+  }
+
+  .step-2-line {
+    grid-area: step-2-line;
+  }
+
+  .step-3-line {
+    grid-area: step-3-line;
+  }
+
+  .step-4-line {
+    grid-area: step-4-line;
+  }
+
+  .step-5-line {
+    grid-area: step-5-line;
+  }
+
+  .step-6-line {
+    grid-area: step-6-line;
+  }
+
+  .step-7-line {
+    grid-area: step-7-line;
+  }
+
+  .step-8-line {
+    grid-area: step-8-line;
+  }
+
+  .step-9-line {
+    grid-area: step-9-line;
+  }
+
+  .step-10-line {
+    grid-area: step-10-line;
+  }
+
+  .step-11-line {
+    grid-area: step-11-line;
+  }
+
   .line {
     grid-area: line;
     height: 100%;
