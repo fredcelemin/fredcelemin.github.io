@@ -7,28 +7,37 @@ body, html {
   line-height: 1.3em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   font-family: 'Roboto Slab', serif;
   line-height: 1.15;
 }
 
-h1, h2 {
+main h1,
+main h2 {
   margin-top: 3em;
 }
 
-h3 {
+main h3 {
   margin-top: 2.5em;
 }
 
-h4, h5, h6 {
+main h4,
+main h5,
+main h6 {
   margin-top: 2em;
 }
 
-p {
+main p {
   margin-top: 1.5em;
 }
 
-.grid, img {
+main .grid,
+main img {
   margin-top: 1em;
 }
 
@@ -56,4 +65,9 @@ h2:before {
 
 main {
   counter-reset: processCounter;
+}
+
+.menu-icon {
+  font-family: arial;
+  font-weight: normal;
 }

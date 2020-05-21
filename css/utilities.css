@@ -36,7 +36,8 @@
 .grid-hcenter { justify-content: center; }
 
 .grid-list {
-
+  border-left: 1px solid #026670;
+  padding-left: 1em;
 }
 
 .grid-list h4,
