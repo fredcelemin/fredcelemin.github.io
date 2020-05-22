@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Slab:wght@600&display=swap');
+
+:root {
+  --theme-green: #026670;
+  --theme-white: #ffffff;
+  --theme-black: #222222;
+
+  --margin-small: 1rem;
+}
+
+.hide { display: none !important; }
+
+body {
+  background-color: #ccc;
+  height: 100rem;
+
+  color: var(--theme-black);
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.organism.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-green);
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.atom.header--logo {
+  height: 4rem;
+}
+
+.molecule.header--links_row {
+  display: none;
+}
+.molecule.header--links_row_list {}
+.molecule.header--links_menu {
+  display: block;
+}
+
+.atom.header--links_menu_open,
+.atom.header--links_menu_close {
+  display: inline-block;
+  color: var(--theme-white);
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.molecule.header--links_menu_list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--theme-green);
+  text-align: left;
+  position: absolute;
+  width: max-content;
+  right: 0;
+  font-size: 1.25rem;
+}
+
+.atom.header--link {
+  color: var(--theme-white);
+  text-decoration: none;
+}
+
+.atom.header--link_reverse {
+  color: var(--theme-green);
+  text-decoration: none;
+}
+
+.atom.header--link__cta {
+  color: var(--theme-green);
+  text-decoration: none;
+  background: var(--theme-white);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.atom.header--dropdown_arrow {
+  display: inline-block;
+  color: var(--theme-white);
+  font-size: 0.85rem;
+  transform: scaleY(0.75) translate(0.15rem, 0px);
+}
+
+.molecule.header--link_item {
+  padding: 0.5rem 1rem;
+}
+
+.molecule.header--link_item--with_dropdown {
+  padding: 0.5rem 1rem;
+}
+
+.molecule.header--link_item_dropdown {
+  display: block;
+  padding-left: 0;
+  list-style-type: none;
+  width: max-content;
+  background-color: var(--theme-white);
+  color: var(--theme-green);
+  margin: 1px;
+}
+
+@media (min-width: 768px) {
+  .organism.header {
+    padding: 0.5rem 2rem;
+  }
+
+  .molecule.header--links_row {
+    display: block;
+  }
+
+  .molecule.header--links_menu {
+    display: none;
+  }
+
+  .molecule.header--link_item {
+    display: inline-block;
+    padding: 16px 8px;
+    cursor: pointer;
+  }
+
+  .molecule.header--link_item--with_dropdown {
+    display: inline-block;
+    padding: 16px 8px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .molecule.header--link_item_dropdown {
+    position: absolute;
+    background-color: var(--theme-green);
+    margin-top: 1rem;
+    margin-left: -1rem;
+  }
+
+  .molecule.header--dropdown_link_item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+main, footer { display: none; }
