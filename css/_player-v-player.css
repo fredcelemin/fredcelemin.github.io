@@ -1,0 +1,156 @@
+.case-study > .section.-hero > .content > .logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.case-study > .section.-hero > .content > .screens {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  grid-gap: var(--space-m);
+}
+
+.case-study > .section.-hero > .content > .screens > .desktop-video-prototype > .screen {
+  width: 77%;
+  top: 16%;
+  clip-path: none;
+}
+
+.case-study > .section.-hero > .content > .screens > .mobile-static-prototype {
+  transform: rotate(24deg) translateX(-2rem) translateY(1rem) scale(0.7);
+}
+
+.case-study > .section.-hero > .content > .intro {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study > .section.-process > .content > .timeline {
+  grid-template-columns: 1fr 30px 5px 30px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "step-1 step-1-line line . ."". . line step-2-line step-2 ""step-3 step-3-line line . ."". . line step-4-line step-4 ""step-5 step-5-line line . ."". . line step-6-line step-6 ""step-7 step-7-line line . ."". . line step-8-line step-8 ""step-9 step-9-line line . ."". . line step-10-line step-10 ""step-11 step-11-line line . .";
+}
+
+.case-study > .section.-ca > .content > .competitors {
+  list-style-type: none;
+  padding: 0;
+}
+.case-study > .section.-ca > .content > .competitors > .competitor {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-s);
+}
+.case-study > .section.-ca > .content > .competitors > .competitor > .image {}
+
+.case-study > .section.-ca > .content > .summary-positives,
+.case-study > .section.-ca > .content > .summary-negatives {
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: auto;
+  margin-bottom: var(--space-s);
+}
+
+.case-study > .section.-ca > .content > .summary-positives > .caption,
+.case-study > .section.-ca > .content > .summary-negatives > .caption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study > .section.-moodboards > .content > .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.case-study > .section.-moodboards > .content > .list > .moodboard {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  margin-bottom: var(--space-l);
+  column-gap: var(--space-s);
+}
+
+@media (min-width: 768px) {
+  .case-study > .section.-brief > .content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "challenge challenge" "problem audience" "project image";
+    grid-gap: var(--space-m);
+  }
+  .case-study > .section.-brief > .content > .challenge { grid-area: challenge; }
+  .case-study > .section.-brief > .content > .problem { grid-area: problem; }
+  .case-study > .section.-brief > .content > .audience { grid-area: audience; }
+  .case-study > .section.-brief > .content > .project { grid-area: project; }
+  .case-study > .section.-brief > .content > .image { grid-area: image; }
+
+  .case-study > .section.-process > .content > .timeline {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 30px 5px 30px 1fr;
+    grid-template-areas: "step-1 . step-3 . step-5 . step-7 . step-9 . step-11" "step-1-line . step-3-line . step-5-line . step-7-line . step-9-line . step-11-line" "line line line line line line line line line line line" ". step-2-line . step-4-line . step-6-line . step-8-line . step-10-line ." ". step-2 . step-4 . step-6 . step-8 . step-10 .";
+  }
+
+  .case-study > .section.-ca > .content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description competitors" "summary-positives summary-negatives";
+    align-items: center;
+    grid-gap: var(--space-m);
+  }
+
+  .case-study > .section.-ca > .content > .description { grid-area: description; }
+
+  .case-study > .section.-ca > .content > .competitors {
+    grid-area: competitors;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .case-study > .section.-ca > .content > .competitors > .competitor {
+    margin-bottom: 0;
+  }
+
+  .case-study > .section.-ca > .content > .summary-positives,
+  .case-study > .section.-ca > .content > .summary-negatives {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: auto;
+    margin-bottom: 0;
+  }
+
+  .case-study > .section.-ca > .content > .summary-positives > .image,
+  .case-study > .section.-ca > .content > .summary-negatives > .image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .case-study > .section.-ca > .content > .summary-positives { grid-area: summary-positives; }
+  .case-study > .section.-ca > .content > .summary-negatives { grid-area: summary-negatives; }
+
+  .case-study > .section.-moodboards > .content > .list > .moodboard {
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "image text";
+    margin-bottom: var(--space-m);
+    justify-items: center;
+    align-items: center;
+  }
+  .case-study > .section.-moodboards > .content > .list > .moodboard.-reversed {
+    grid-template-columns: auto 50%;
+    grid-template-areas: "text image";
+  }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .text { grid-area: text; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .image { grid-area: image; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .image.-smaller {
+    width: 50%;
+  }
+
+}
