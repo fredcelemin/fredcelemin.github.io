@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap');
+
+:root {
+  --di-dark-green: #196F58;
+  --di-light-green: #B9E295;
+  --di-yellow: #F4BB03;
+  --di-gray: #3E4B52;
+  --di-white: #FFFFFF;
+}
+
+.case-study > .section.-hero > .content > .logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-s);
+  width: 60%;
+}
+
+.case-study > .section.-brief {}
+.case-study > .section.-brief > .content {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: auto;
+  grid-template-areas: "company" "challenge" "problem" "project";
+  grid-gap: var(--grid-gap);
+}
+.case-study > .section.-brief > .content > .company { grid-area: company; }
+.case-study > .section.-brief > .content > .challenge { grid-area: challenge; }
+.case-study > .section.-brief > .content > .problem { grid-area: problem; }
+.case-study > .section.-brief > .content > .project { grid-area: project; }
+
+.case-study > .section.-kickoff > .content > .proto-to-user-persona > .arrow { display: none; }
+
+.case-study > .section.-kickoff > .content > .client-image,
+.case-study > .section.-kickoff > .content > .proto-to-user-persona > .proto-persona-image,
+.case-study > .section.-kickoff > .content > .proto-to-user-persona > .user-persona-image {
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+
+.case-study > .section.-kickoff > .content > .client-image > .image,
+.case-study > .section.-kickoff > .content > .proto-to-user-persona > .proto-persona-image > .image,
+.case-study > .section.-kickoff > .content > .proto-to-user-persona > .user-persona-image > .image {
+  width: 50%;
+  min-width: 10rem;
+  margin-bottom: var(--space-xs);
+}
+
+.case-study > .section.-principles > .content > .list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  row-gap: var(--space-l);
+}
+.case-study > .section.-principles > .content > .list > .principle {
+  display: grid;
+  grid-template-columns: 7.5rem auto;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "title title" "icon description";
+  column-gap: var(--space-s);
+}
+.case-study > .section.-principles > .content > .list > .principle > .title {
+  grid-area: title;
+  text-align: center;
+}
+.case-study > .section.-principles > .content > .list > .principle > .icon {
+  grid-area: icon;
+  width: 100%;
+}
+.case-study > .section.-principles > .content > .list > .principle > .description {
+  grid-area: description;
+  align-self: center;
+}
+
+.case-study > .section.-research > .content > .competitive-analysis > .list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-gap: var(--space-s);
+  justify-items: center;
+  align-items: center;
+}
+
+.case-study > .section.-moodboards > .content > .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.case-study > .section.-moodboards > .content > .list > .moodboard {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  margin-bottom: var(--space-l);
+  column-gap: var(--space-s);
+}
+
+.case-study > .section.-moodboards > .content > .final > .image {
+  margin-bottom: var(--space-m);
+}
+
+.case-study > .section.-style-tiles > .content > .list {
+  list-style-type: none;
+  padding: 0;
+}
+.case-study > .section.-style-tiles > .content > .list > .style-tile {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "title title" "image image" "description description" "emotions-title adjectives-title" "emotions-list adjectives-list";
+  margin-bottom: var(--space-l);
+}
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .title { grid-area: title; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .image { grid-area: image; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .description { grid-area: description; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .emotions-title { grid-area: emotions-title; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .emotions-list { grid-area: emotions-list; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .adjectives-title { grid-area: adjectives-title; }
+.case-study > .section.-style-tiles > .content > .list > .style-tile > .adjectives-list { grid-area: adjectives-list; }
+
+.case-study > .section.-style-tiles > .content > .final {
+  margin-bottom: var(--space-l);
+}
+
+.case-study > .section.-style-tiles > .content > .final > .image {
+  margin-bottom: var(--space-m);
+}
+
+.case-study > .section.-style-tiles > .content > .interview > .insights > .image-with-caption {
+  grid-area: image-with-caption;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: var(--space-m);
+}
+
+.case-study > .section.-wireframes > .content > .wireframes {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "home education beliefs" "home education untitled" "micro-ent gender health" ". team .";
+  grid-gap: var(--space-xs);
+}
+.case-study > .section.-wireframes > .content > .wireframes > .education { grid-area: education ; }
+.case-study > .section.-wireframes > .content > .wireframes > .micro-ent { grid-area: micro-ent ; }
+.case-study > .section.-wireframes > .content > .wireframes > .beliefs { grid-area: beliefs ; }
+.case-study > .section.-wireframes > .content > .wireframes > .home { grid-area: home ; }
+.case-study > .section.-wireframes > .content > .wireframes > .team { grid-area: team ; }
+.case-study > .section.-wireframes > .content > .wireframes > .untitled { grid-area: untitled ; }
+.case-study > .section.-wireframes > .content > .wireframes > .health { grid-area: health ; }
+.case-study > .section.-wireframes > .content > .wireframes > .gender { grid-area: gender ; }
+
+.case-study > .section.-iteration-1 > .content > .screens {
+  margin-bottom: var(--space-m);
+}
+
+.case-study > .section.-iteration-1 > .content > .screens > .images {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "home gender education micro-ent" "home beliefs partner health";
+  grid-gap: var(--space-xs);
+}
+.case-study > .section.-iteration-1 > .content > .screens > .images > .home { grid-area: home ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .gender { grid-area: gender ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .education { grid-area: education ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .micro-ent { grid-area: micro-ent ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .beliefs { grid-area: beliefs ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .partner { grid-area: partner ; }
+.case-study > .section.-iteration-1 > .content > .screens > .images > .health { grid-area: health ; }
+
+.case-study > .section.-iteration-1 > .content > .prototype {
+  margin-bottom: var(--space-m)
+}
+
+.case-study > .section.-iteration-1 > .content > .interview {
+  margin-bottom: var(--space-m)
+}
+
+.case-study > .section.-iteration-2 > .content > .screens {
+  margin-bottom: var(--space-m);
+}
+
+.case-study > .section.-iteration-2 > .content > .screens > .images {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "home education gender team" "home education health micro-ent";
+  grid-gap: var(--space-xs);
+}
+
+.case-study > .section.-iteration-2 > .content > .screens > .images > .home { grid-area: home ; }
+.case-study > .section.-iteration-2 > .content > .screens > .images > .education { grid-area: education ; }
+.case-study > .section.-iteration-2 > .content > .screens > .images > .micro-ent { grid-area: micro-ent ; }
+.case-study > .section.-iteration-2 > .content > .screens > .images > .team { grid-area: team ; }
+.case-study > .section.-iteration-2 > .content > .screens > .images > .partner { grid-area: partner ; }
+.case-study > .section.-iteration-2 > .content > .screens > .images > .health { grid-area: health ; }
+
+.case-study > .section.-iteration-2 > .content > .prototype {
+  margin-bottom: var(--space-m)
+}
+
+.case-study > .section.-iteration-2 > .content > .interview {
+  margin-bottom: var(--space-m)
+}
+
+.case-study > .section.-iteration-final > .content > .screens > .images {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "home education micro-ent beliefs" "home education partner health";
+  grid-gap: var(--space-xs);
+}
+.case-study > .section.-iteration-final > .content > .screens > .images > .home { grid-area: home ; }
+.case-study > .section.-iteration-final > .content > .screens > .images > .education { grid-area: education ; }
+.case-study > .section.-iteration-final > .content > .screens > .images > .micro-ent { grid-area: micro-ent ; }
+.case-study > .section.-iteration-final > .content > .screens > .images > .beliefs { grid-area: beliefs ; }
+.case-study > .section.-iteration-final > .content > .screens > .images > .partner { grid-area: partner ; }
+.case-study > .section.-iteration-final > .content > .screens > .images > .health { grid-area: health ; }
+
+.case-study > .section.-system > .content > .logo {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .logo > .image {}
+
+.case-study > .section.-system > .content > .color-palette {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .color-palette > .colors {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: var(--space-m);
+  padding: 0;
+  list-style-type: none;
+  justify-items: center;
+  align-items: center;
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color {
+  width: 6rem;
+  height: 6rem;
+  background-color: #aaa;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color::before {
+  content: "#";
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color.dark-green {
+  background-color: var(--di-dark-green);
+  color: var(--di-white);
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color.light-green {
+  background-color: var(--di-light-green);
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color.yellow {
+  background-color: var(--di-yellow);
+}
+.case-study > .section.-system > .content > .color-palette > .colors > .color.gray {
+  background-color: var(--di-gray);
+  color: var(--di-white);
+}
+
+.case-study > .section.-system > .content > .font-family {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .font-family > .fonts {
+  list-style-type: none;
+  padding: 0;
+}
+.case-study > .section.-system > .content > .font-family > .fonts > .font {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  display: block;
+  margin-bottom: var(--space-m);
+}
+.case-study > .section.-system > .content > .font-family > .fonts > .font.-headers {
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+.case-study > .section.-system > .content > .font-family > .fonts > .font.-subheaders {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.case-study > .section.-system > .content > .font-family > .fonts > .font.-body {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.case-study > .section.-system > .content > .buttons {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .buttons > .variants {
+  padding: 0;
+  list-style-type: none;
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button {
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease-out;
+  margin-bottom: var(--space-m);
+  margin-left: auto;
+  margin-right: auto;
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-cta {
+  background-color: var(--di-white);
+  border: 1px solid var(--di-yellow);
+  border-radius: 2.5rem;
+  padding: 1.5rem 3.65rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: var(--di-dark-green);
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-cta:hover {
+  background-color: var(--di-dark-green);
+  color: var(--di-white);
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-primary {
+  background-color: var(--di-dark-green);
+  border: 1px solid var(--di-yellow);
+  border-radius: 2.5rem;
+  padding: 1.5rem 3.65rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: var(--di-white);
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-primary:hover {
+  background-color: var(--di-white);
+  color: var(--di-dark-green);
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-secondary {
+  font-size: 0.88rem;
+  padding: 0.33rem 0.88rem;
+  line-height: 1.16rem;
+  color: var(--di-white);
+  background: var(--di-yellow);
+  border: 1px solid var(--di-yellow);
+  border-radius: 1.38rem;
+}
+.case-study > .section.-system > .content > .buttons > .variants > .button.-secondary:hover {
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.25rem);
+}
+
+.case-study > .section.-system > .content > .dropdowns {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .dropdowns > .example {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  /* grid-template-columns: repeat(1, 194px); */
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 1px;
+  padding: 1px;
+  background-color: var(--di-dark-green);
+  max-width: 100%;
+  margin: auto;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option {
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 40px auto;
+  grid-gap: var(--grid-gap);
+  background-color: white;
+  padding: 5px;
+  align-items: center;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option > .icon {
+  width: 40px;
+  height: 40px;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option > .icon.-yellow {
+  display: none;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option > .label {
+  color: var(--di-gray);
+  margin-bottom: 0;
+  padding: 5px;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option.-hover,
+.case-study > .section.-system > .content > .dropdowns > .example > .option:hover {
+  background-color: var(--di-dark-green);
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option.-hover > .label,
+.case-study > .section.-system > .content > .dropdowns > .example > .option:hover > .label{
+  color: var(--theme-white);
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option.-hover > .icon,
+.case-study > .section.-system > .content > .dropdowns > .example > .option:hover > .icon {
+  display: none;
+}
+.case-study > .section.-system > .content > .dropdowns > .example > .option.-hover > .icon.-yellow,
+.case-study > .section.-system > .content > .dropdowns > .example > .option:hover > .icon.-yellow {
+  display: block;
+}
+
+.case-study > .section.-system > .content > .iconography {
+  margin-bottom: var(--space-xl);
+}
+.case-study > .section.-system > .content > .iconography > .icons {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: var(--space-xs);
+  justify-items: center;
+  align-items: center;
+}
+.case-study > .section.-system > .content > .iconography > .icons > .item {
+  width: fit-content;
+}
+.case-study > .section.-system > .content > .iconography > .icons > .item > .icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .case-study > .section.-brief > .content {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "company company" "challenge project" "problem project";
+    column-gap: var(--space-l);
+  }
+
+  .case-study > .section.-brief > .content > .project {
+    align-self: center;
+  }
+
+  .case-study > .section.-kickoff > .content {
+    display: grid;
+    grid-template-columns: auto 12.5rem;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description client-image" "proto-to-user-persona proto-to-user-persona";
+    column-gap: var(--space-m);
+  }
+
+  .case-study > .section.-kickoff > .content > .description { grid-area: description; }
+  .case-study > .section.-kickoff > .content > .client-image { grid-area: client-image; }
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona {
+    grid-area: proto-to-user-persona;
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "proto-persona-image arrow user-persona-image";
+  }
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona > .proto-persona-image { grid-area: proto-persona-image; }
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona > .arrow {
+    grid-area: arrow;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    transform: scaleY(1.5);
+    font-size: 3em;
+    font-family: sans-serif;
+  }
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona > .user-persona-image { grid-area: user-persona-image; }
+
+  .case-study > .section.-kickoff > .content > .client-image > .image,
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona > .proto-persona-image > .image,
+  .case-study > .section.-kickoff > .content > .proto-to-user-persona > .user-persona-image > .image {
+    width: 100%;
+  }
+
+  .case-study > .section.-principles > .content > .list {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    column-gap: var(--space-l);
+  }
+  .case-study > .section.-principles > .content > .list > .principle {
+    grid-template-columns: auto;
+    grid-template-rows: 3rem 12.5rem auto;
+    grid-template-areas: "title" "icon" "description";
+  }
+
+  .case-study > .section.-principles > .content > .list > .principle > .title {
+    align-self: flex-end;
+  }
+  .case-study > .section.-principles > .content > .list > .principle > .icon {
+    align-self: center;
+  }
+  .case-study > .section.-principles > .content > .list > .principle > .description {
+    align-self: flex-start;
+  }
+
+  .case-study > .section.-research > .content > .competitive-analysis > .list {
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto;
+  }
+
+  .case-study > .section.-moodboards > .content > .list > .moodboard {
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "image title" "image description" "image adjectives-title" "image adjectives-list";
+    margin-bottom: var(--space-m);
+  }
+  .case-study > .section.-moodboards > .content > .list > .moodboard.-reversed {
+    grid-template-columns: auto 50%;
+    grid-template-areas: "title image" "description image" "adjectives-title image" "adjectives-list image";
+  }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .title { grid-area: title; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .image { grid-area: image; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .description { grid-area: description; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .adjectives-title { grid-area: adjectives-title; }
+  .case-study > .section.-moodboards > .content > .list > .moodboard > .adjectives-list { grid-area: adjectives-list; }
+
+  .case-study > .section.-moodboards > .content > .final {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title title" "description description" "explanation image" "explanation image";
+    column-gap: var(--space-s);
+  }
+  .case-study > .section.-moodboards > .content > .final > .title { grid-area: title; }
+  .case-study > .section.-moodboards > .content > .final > .description { grid-area: description; }
+  .case-study > .section.-moodboards > .content > .final > .explanation { grid-area: explanation; }
+  .case-study > .section.-moodboards > .content > .final > .image {
+    grid-area: image;
+    margin-bottom: 0;
+  }
+
+  .case-study > .section.-style-tiles > .content > .list > .style-tile {
+    grid-template-columns: auto auto 50%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title title image" "description description image" "emotions-title adjectives-title image" "emotions-list adjectives-list image";
+    column-gap: var(--space-s);
+    margin-bottom: var(--space-m);
+  }
+
+  .case-study > .section.-style-tiles > .content > .list > .style-tile.-reversed {
+    grid-template-columns: 50% auto auto;
+    grid-template-areas: "image title title" "image description description" "image emotions-title adjectives-title" "image emotions-list adjectives-list";
+  }
+
+  .case-study > .section.-style-tiles > .content > .final {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title title" "description description" "explanation-title image" "explanation image";
+    margin-bottom: var(--space-l);
+  }
+  .case-study > .section.-style-tiles > .content > .final > .title { grid-area: title; }
+  .case-study > .section.-style-tiles > .content > .final > .description { grid-area: description; }
+  .case-study > .section.-style-tiles > .content > .final > .explanation-title { grid-area: explanation-title; }
+  .case-study > .section.-style-tiles > .content > .final > .explanation { grid-area: explanation; }
+  .case-study > .section.-style-tiles > .content > .final > .image { grid-area: image; }
+
+  .case-study > .section.-style-tiles > .content > .interview > .insights {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title title" "description image-with-caption";
+    column-gap: var(--space-s);
+  }
+  .case-study > .section.-style-tiles > .content > .interview > .insights > .title { grid-area: title; }
+  .case-study > .section.-style-tiles > .content > .interview > .insights > .image-with-caption { grid-area: image-with-caption; }
+  .case-study > .section.-style-tiles > .content > .interview > .insights > .description { grid-area: description; }
+
+  .case-study > .section.-wireframes > .content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description description" "wireframes insights";
+    column-gap: var(--space-m);
+  }
+  .case-study > .section.-wireframes > .content > .description { grid-area: description ;}
+  .case-study > .section.-wireframes > .content > .wireframes {
+    grid-area: wireframes;
+    grid-gap: var(--space-s);
+  }
+  .case-study > .section.-wireframes > .content > .insights { grid-area: insights ;}
+
+  .case-study > .section.-iteration-1 > .content > .screens {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description images" "description images";
+    column-gap: var(--space-m);
+  }
+  .case-study > .section.-iteration-1 > .content > .screens > .title { grid-area: title; }
+  .case-study > .section.-iteration-1 > .content > .screens > .description { grid-area: description; }
+  .case-study > .section.-iteration-1 > .content > .screens > .images {
+    grid-area: images;
+    grid-gap: var(--space-s);
+  }
+
+  .case-study > .section.-iteration-1 > .content > .interview {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description feedback" "description feedback";
+    column-gap: var(--space-s);
+  }
+  .case-study > .section.-iteration-1 > .content > .interview > .title { grid-area: title; }
+  .case-study > .section.-iteration-1 > .content > .interview > .description { grid-area: description; }
+  .case-study > .section.-iteration-1 > .content > .interview > .feedback { grid-area: feedback; }
+
+  .case-study > .section.-iteration-1 > .content > .insights {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title positives-title opportunities-title" "description positives-list opportunities-list";
+    grid-gap: var(--space-s);
+  }
+  .case-study > .section.-iteration-1 > .content > .insights > .title { grid-area: title; }
+  .case-study > .section.-iteration-1 > .content > .insights > .description { grid-area: description; }
+  .case-study > .section.-iteration-1 > .content > .insights > .positives-title { grid-area: positives-title; }
+  .case-study > .section.-iteration-1 > .content > .insights > .opportunities-title { grid-area: opportunities-title; }
+  .case-study > .section.-iteration-1 > .content > .insights > .positives-list { grid-area: positives-list; }
+  .case-study > .section.-iteration-1 > .content > .insights > .opportunities-list { grid-area: opportunities-list; }
+
+  .case-study > .section.-iteration-2 > .content > .screens > .images {
+    grid-gap: var(--space-s);
+  }
+
+  .case-study > .section.-iteration-2 > .content > .interview {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "description feedback" "description feedback";
+    column-gap: var(--space-s);
+  }
+  .case-study > .section.-iteration-2 > .content > .interview > .title { grid-area: title; }
+  .case-study > .section.-iteration-2 > .content > .interview > .description { grid-area: description; }
+  .case-study > .section.-iteration-2 > .content > .interview > .feedback { grid-area: feedback; }
+
+  .case-study > .section.-iteration-2 > .content > .insights {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title blockers-title solution-title" "description blockers-description solution-description";
+    grid-gap: var(--space-s);
+  }
+  .case-study > .section.-iteration-2 > .content > .insights > .title { grid-area: title; }
+  .case-study > .section.-iteration-2 > .content > .insights > .description { grid-area: description; }
+  .case-study > .section.-iteration-2 > .content > .insights > .blockers-title { grid-area: blockers-title; }
+  .case-study > .section.-iteration-2 > .content > .insights > .solution-title { grid-area: solution-title; }
+  .case-study > .section.-iteration-2 > .content > .insights > .blockers-description { grid-area: blockers-description; }
+  .case-study > .section.-iteration-2 > .content > .insights > .solution-description { grid-area: solution-description; }
+
+  .case-study > .section.-iteration-final > .content > .screens > .images {
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "home education partner health micro-ent beliefs";
+    grid-gap: var(--space-s);
+  }
+  .case-study > .section.-iteration-final > .content > .prototype {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title desktop-video-prototype" "description desktop-video-prototype";
+  }
+  .case-study > .section.-iteration-final > .content > .prototype > .title { grid-area: title; }
+  .case-study > .section.-iteration-final > .content > .prototype > .description { grid-area: description; }
+  .case-study > .section.-iteration-final > .content > .prototype > .desktop-video-prototype { grid-area: desktop-video-prototype; }
+
+  .case-study > .section.-system > .content > .color-palette > .colors {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+
+  .case-study > .section.-system > .content > .font-family > .fonts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    column-gap: var(--space-s);
+  }
+
+  .case-study > .section.-system > .content > .buttons > .variants > .button {
+    display: inline-block;
+    margin-right: var(--space-s);
+  }
+
+  .case-study > .section.-system > .content > .dropdowns > .example {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 220px);
+    width: fit-content;
+  }
+
+  .case-study > .section.-system > .content > .iconography > .icons {
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: var(--space-s);
+  }
+}

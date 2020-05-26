@@ -1,24 +1,4 @@
 @media (min-width: 425px) and (max-width: 768px) {
-  body::before {
-    content: "medium";
-    position: fixed;
-    z-index: 100;
-    padding: 0.5em;
-    background-color: white;
-    margin: 0.5em;
-    opacity: 0.5;
-    border-radius: 0.5em;
-    bottom: 0;
-  }
-
-  .hide-m {
-    display: none;
-  }
-
-  #sticky-header {
-    padding: 0.5em 0.5em 0.5em 2em;
-  }
-
   main#home {
     width: 75%;
   }

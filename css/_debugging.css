@@ -1,0 +1,34 @@
+@media (max-width: 1440px) {
+  body::before {
+    content: "small";
+    position: fixed;
+    z-index: var(--debugging-layer);
+    padding: 0.5em;
+    background-color: white;
+    margin: 0.5em;
+    opacity: 0.5;
+    border-radius: 0.5em;
+    bottom: 0;
+  }
+
+  body * {
+    /* background: red !important; */
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  body::before {
+    content: "medium";
+  }
+}
+
+@media (min-width: 768px) {
+  /* and (max-width: 1440px) */
+  body::before {
+    content: "large";
+  }
+}
+
+body {
+  /* background-color: #ccc; */
+}
