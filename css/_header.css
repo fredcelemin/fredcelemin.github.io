@@ -173,6 +173,7 @@
   background-color: var(--theme-white);
   width: calc(100% - 2px);
   border: 1px solid var(--theme-green);
+  margin-bottom: 0;
 }
 
 /* header--dropdown_link_item */

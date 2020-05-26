@@ -4,47 +4,86 @@
     <meta charset="utf-8">
     <title>Fred Celemin Portfolio</title>
     <link rel="stylesheet" href="lib/normalize.css">
-    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/_core.css">
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_footer.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/x-large.css">
     <!-- TODO <link rel="shortcut icon" href=".ico"> -->
+
+    <script src="./scripts/_header.js" charset="utf-8"></script>
+    <script src="./scripts/_test.js" charset="utf-8"></script>
+
   </head>
   <body>
 
-    <header id="sticky-header">
-      <img id="logo" src="" alt="">
-      <nav id="list-nav" class="hide-s">
-        <ul class="main-nav-options">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="case-studies.html">Case Studies<span id="case-studies-arrow">&#9660;</span></a>
-            <ul class="case-study-options">
-              <li><a href="case-studies/diatom-impact.html">Diatom Impact</a></li>
-              <li><a href="case-studies/player-vs-player.html">Player vs. Player</a></li>
-              <li><a href="case-studies/bon-voyage.html">Bon Voyage</a></li>
+    <header class="header">
+      <img class="logo" src="./assets/theme/logo.svg" alt="Logo with stylized text that says Fred Design">
+
+      <nav class="nav-row">
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="index.html">Home</a>
+          </li>
+          <li class="item -with-arrow" data-toggle-sender="case-studies">
+            <a class="link">Case Studies
+              <span class="arrow" data-toggle-receiver="case-studies">&#9660;</span>
+              <span class="arrow __hide" data-toggle-receiver="case-studies">&#9650;</span>
+            </a>
+            <ul class="dropdown __hide" data-toggle-receiver="case-studies">
+              <li class="item">
+                <a class="link" href="case-studies/diatom-impact.html">Diatom Impact</a>
+              </li>
+              <li class="item">
+                <a class="link" href="case-studies/player-vs-player.html">Player vs. Player</a>
+              </li>
+              <li class="item">
+                <a class="link" href="case-studies/bon-voyage.html">Bon Voyage</a>
+              </li>
             </ul>
           </li>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a id="contact-me" href="contact-me.html">Contact Me</a></li>
+          <li class="item">
+            <a class="link" href="about-me.html">About Me</a>
+          </li>
+          <li class="item">
+            <a class="link -cta" href="contact-me.html">Contact Me</a>
+          </li>
         </ul>
       </nav>
-      <nav id="menu-nav" class="">
-        <a id="open-menu-icon" class="menu-icon" href="#">≡</a>
-        <a id="close-menu-icon" class="menu-icon" href="#">&times;</a>
-        <ul class="main-nav-options">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="case-studies.html">Case Studies<span id="case-studies-arrow">&#9660;</span></a>
+
+      <nav class="nav-menu">
+        <a class="open-close-button" data-toggle-sender="nav-menu" data-toggle-receiver="nav-menu">≡</a>
+        <a class="open-close-button __hide" data-toggle-sender="nav-menu" data-toggle-receiver="nav-menu">×</a>
+
+        <ul class="list __hide" data-toggle-receiver="nav-menu">
+          <li class="item">
+            <a class="link" href="index.html">Home</a>
           </li>
-          <ul class="case-study-options">
-            <li><a href="case-studies/diatom-impact.html">Diatom Impact</a></li>
-            <li><a href="case-studies/player-vs-player.html">Player vs. Player</a></li>
-            <li><a href="case-studies/bon-voyage.html">Bon Voyage</a></li>
+          <li class="item -with-arrow" data-toggle-sender="case-studies">
+            <a class="link">
+              Case Studies
+              <span class="arrow" data-toggle-receiver="case-studies">&#9660;</span>
+              <span class="arrow __hide" data-toggle-receiver="case-studies">&#9650;</span>
+            </a>
+          </li>
+          <ul class="dropdown __hide" data-toggle-receiver="case-studies">
+            <li class="item">
+              <a class="link -invert-colors" href="case-studies/diatom-impact.html">Diatom Impact</a>
+            </li>
+            <li class="item">
+              <a class="link -invert-colors" href="case-studies/player-vs-player.html">Player vs. Player</a>
+            </li>
+            <li class="item">
+              <a class="link -invert-colors" href="case-studies/bon-voyage.html">Bon Voyage</a>
+            </li>
           </ul>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="contact-me.html">Contact Me</a></li>
+          <li class="item">
+            <a class="link" href="about-me.html">About Me</a>
+          </li>
+          <li class="item">
+            <a class="link" href="contact-me.html">Contact Me</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -55,11 +94,30 @@
       <a id="case-studies" href="case-studies.html">Case studies</a>
     </main>
 
-    <footer id="fixed-footer">
-      <a href="#"><img class="icon" src="" alt=""></a>
-      <a href="#"><img class="icon" src="" alt=""></a>
-      <a href="#"><img class="icon" src="" alt=""></a>
-      <a href="#"><img class="icon" src="" alt=""></a>
+    <footer class="footer">
+      <a class="scroll-top" href="#top">⤒</a>
+      <ul class="social">
+        <li class="icon">
+          <a class="link" href="#">
+            <img class="image" src="./assets/theme/social-google.svg" alt="">
+          </a>
+        </li>
+        <li class="icon">
+          <a class="link" href="#">
+            <img class="image" src="./assets/theme/social-linkedin.svg" alt="">
+          </a>
+        </li>
+        <li class="icon">
+          <a class="link" href="#">
+            <img class="image" src="./assets/theme/social-dribbble.svg" alt="">
+          </a>
+        </li>
+        <li class="icon">
+          <a class="link" href="#">
+            <img class="image" src="./assets/theme/social-instagram.svg" alt="">
+          </a>
+        </li>
+      </ul>
     </footer>
 
   </body>
