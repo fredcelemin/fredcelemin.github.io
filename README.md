@@ -1,15 +1,3 @@
-# fredcelemin.github.io
-
-## Features
-
-* hover states
-* animations
-* interactivity
-
-## Bugs
-
-* export video files again
-* pop-up image modals
-* image gallery within a section
-* show scroll to top after some point
-* SOME VIDEOS HAVE BLACK BARS ON SIDES, SOME DON'T BUT NEED TO ACCOUNT FOR BOTH
+version https://git-lfs.github.com/spec/v1
+oid sha256:616ac616cde90c4c7a91f5be9baac58be9d438ab29174ee3cdfafcb991c1d212
+size 292

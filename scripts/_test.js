@@ -1,10 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Adds toggling ability to the page
-  //
-  // Elements with a data-toggle-sender attribute's will
-  // trigger elements with a data-toggle-receiver attribute
-  // to show or hide if they share the same attribute value.
-  document
-    .querySelector('.header')
-    .addEventListener('click', handleToggle)
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:71db9930ee9b9eae731646f4faeb3d529effefbebc63222972213bb6f6e5db2e
+size 370

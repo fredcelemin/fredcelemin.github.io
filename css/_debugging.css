@@ -1,34 +1,3 @@
-@media (max-width: 1440px) {
-  body::before {
-    content: "small";
-    position: fixed;
-    z-index: var(--debugging-layer);
-    padding: 0.5em;
-    background-color: white;
-    margin: 0.5em;
-    opacity: 0.5;
-    border-radius: 0.5em;
-    bottom: 0;
-  }
-
-  body * {
-    /* background: red !important; */
-  }
-}
-
-@media (min-width: 425px) and (max-width: 768px) {
-  body::before {
-    content: "medium";
-  }
-}
-
-@media (min-width: 768px) {
-  /* and (max-width: 1440px) */
-  body::before {
-    content: "large";
-  }
-}
-
-body {
-  /* background-color: #ccc; */
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2afcf37492cf502c3fa1e81aa3f7a1a683c7aa5c97c0154ae1d45a4197c9113
+size 559

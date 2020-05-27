@@ -1,32 +1,3 @@
-.case-study {
-  counter-reset: section-counter;
-}
-
-.case-study > .section > .heading {
-  background-color: var(--theme-light-green);
-  font-family: 'Roboto Slab', serif;
-  text-align: center;
-  color: white;
-}
-
-.case-study > .section > .heading:before {
-  counter-increment: section-counter;
-  content: counter(section-counter) ". ";
-  color: var(--theme-yellow);
-}
-
-.case-study > .section > .heading.-unnumbered:before {
-  counter-increment: none;
-  content: none;
-}
-
-.case-study > .section > .content {
-  width: calc(100% - 5rem);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-@media (min-width: 425px) and (max-width: 768px) {}
-@media (min-width: 768px) {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e251c3697a771c69324886a785d0b5f2f07d1d4cf075d9628937da099746ab64
+size 682
